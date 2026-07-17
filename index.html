@@ -1,33 +1,100 @@
-<section id="productos">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Portafolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:Arial,sans-serif;
+background:#f4f7fb;
+color:#333;
+}
+header{
+background:#0d6efd;
+color:white;
+padding:40px 20px;
+text-align:center;
+}
+header h1{
+font-size:38px;
+}
+header p{
+margin-top:10px;
+font-size:18px;
+}
+nav{
+background:#084298;
+padding:12px;
+text-align:center;
+}
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+section{
+max-width:900px;
+margin:30px auto;
+padding:20px;
+}
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+h2{
+color:#0d6efd;
+margin-bottom:10px;
+}
+footer{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+</style>
+</head>
+<body>
 
-<h2>Productos Destacados</h2>
+<header>
+<h1>Jenniffer Fariño</h1>
+<p>Estudiante de Ingeniería en Tecnología de la Información</p>
+</header>
 
-<div class="producto">
-<h3>👕 Camiseta Casual</h3>
-<p>Color: Blanco</p>
-<p>Precio: $18.99</p>
-<button>Comprar</button>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#sobre">Sobre mí</a>
+<a href="#proyecto">Proyecto</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<section id="sobre">
+<div class="card">
+<h2>Sobre mí</h2>
+<p>Soy estudiante de Ingeniería en Tecnología de la Información. Me interesa el desarrollo web, la tecnología y el aprendizaje continuo.</p>
 </div>
 
-<div class="producto">
-<h3>👖 Jeans Clásicos</h3>
-<p>Color: Azul</p>
-<p>Precio: $34.99</p>
-<button>Comprar</button>
+<div class="card" id="proyecto">
+<h2>Mi Proyecto</h2>
+<p>Este sitio web fue desarrollado como proyecto académico utilizando HTML y CSS. Su objetivo es presentar información personal y demostrar conocimientos básicos de desarrollo web.</p>
 </div>
 
-<div class="producto">
-<h3>👗 Vestido Elegante</h3>
-<p>Color: Negro</p>
-<p>Precio: $49.99</p>
-<button>Comprar</button>
+<div class="card" id="contacto">
+<h2>Contacto</h2>
+<p>📧 Correo: jenniffer@example.com</p>
+<p>📍 Ecuador</p>
 </div>
-
-<div class="producto">
-<h3>👟 Zapatillas Urbanas</h3>
-<p>Color: Blanco</p>
-<p>Precio: $59.99</p>
-<button>Comprar</button>
-</div>
-
 </section>
+
+<footer>
+© 2026 Jenniffer Fariño | Proyecto Académico
+</footer>
+
+</body>
+</html>

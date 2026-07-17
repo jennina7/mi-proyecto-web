@@ -3,237 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jenniffer Fariño | Portafolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#0f172a;
-color:#fff;
-}
-
-header{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(135deg,#2563eb,#7c3aed);
-}
-
-header img{
-width:170px;
-height:170px;
-border-radius:50%;
-border:5px solid white;
-object-fit:cover;
-margin-bottom:20px;
-}
-
-header h1{
-font-size:42px;
-}
-
-header h2{
-font-size:20px;
-font-weight:300;
-margin-top:10px;
-}
-
-.btn{
-display:inline-block;
-margin-top:30px;
-padding:14px 35px;
-background:white;
-color:#2563eb;
-text-decoration:none;
-border-radius:40px;
-font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-transform:scale(1.05);
-}
-
-section{
-max-width:1100px;
-margin:auto;
-padding:70px 20px;
-}
-
-.titulo{
-text-align:center;
-font-size:35px;
-margin-bottom:40px;
-color:#60a5fa;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-}
-
-.card{
-background:#1e293b;
-padding:25px;
-border-radius:15px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card h3{
-margin-bottom:15px;
-color:#60a5fa;
-}
-
-.habilidades{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-justify-content:center;
-}
-
-.habilidades span{
-background:#2563eb;
-padding:10px 18px;
-border-radius:30px;
-}
-
-footer{
-background:#020617;
-padding:30px;
-text-align:center;
-margin-top:40px;
-}
-
-@media(max-width:600px){
-
-header h1{
-font-size:30px;
-}
-
-header h2{
-font-size:18px;
-}
-
-}
-
-</style>
-
+<title>Fashion Style</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
+<h1>Fashion Style</h1>
 
-<img src="https://i.imgur.com/6VBx3io.png">
-
-<h1>Jenniffer Fariño</h1>
-
-<h2>Estudiante de Ingeniería en Tecnología de la Información</h2>
-
-<a href="#sobre" class="btn">Conóceme</a>
+<nav>
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#productos">Productos</a></li>
+<li><a href="#ofertas">Ofertas</a></li>
+<li><a href="#nosotros">Nosotros</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
 
 </header>
 
-<section id="sobre">
+<section id="inicio">
+<h2>¡Bienvenido a Fashion Style!</h2>
+<p>Descubre las últimas tendencias en moda para hombres y mujeres.</p>
+<button>Comprar Ahora</button>
+</section>
 
-<h2 class="titulo">Sobre mí</h2>
+<section id="productos">
 
-<div class="cards">
+<h2>Productos Destacados</h2>
 
-<div class="card">
-
-<h3>👩 Sobre mí</h3>
-
-<p>Soy estudiante de Ingeniería en Tecnología de la Información. Me apasiona aprender nuevas tecnologías, desarrollar aplicaciones y adquirir experiencia profesional.</p>
-
+<div class="producto">
+<img src="imagenes/camiseta.jpg" width="200">
+<h3>Camiseta Casual</h3>
+<p>$18.99</p>
+<button>Comprar</button>
 </div>
 
-<div class="card">
-
-<h3>🎯 Objetivo</h3>
-
-<p>Desarrollar soluciones tecnológicas innovadoras que contribuyan al crecimiento de empresas y organizaciones mediante el uso de herramientas modernas.</p>
-
+<div class="producto">
+<img src="imagenes/jeans.jpg" width="200">
+<h3>Jeans Clásicos</h3>
+<p>$34.99</p>
+<button>Comprar</button>
 </div>
 
+<div class="producto">
+<img src="imagenes/vestido.jpg" width="200">
+<h3>Vestido Elegante</h3>
+<p>$49.99</p>
+<button>Comprar</button>
+</div>
+
+<div class="producto">
+<img src="imagenes/zapatillas.jpg" width="200">
+<h3>Zapatillas Urbanas</h3>
+<p>$59.99</p>
+<button>Comprar</button>
 </div>
 
 </section>
 
-<section>
+<section id="ofertas">
 
-<h2 class="titulo">Habilidades</h2>
+<h2>Ofertas</h2>
 
-<div class="habilidades">
+<ul>
+<li>30% de descuento en ropa de verano.</li>
+<li>Envío gratis por compras superiores a $50.</li>
+<li>2x1 en camisetas seleccionadas.</li>
 
-<span>HTML</span>
-
-<span>CSS</span>
-
-<span>Java</span>
-
-<span>Redes</span>
-
-<span>Bases de Datos</span>
-
-<span>GitHub</span>
-
-</div>
+</ul>
 
 </section>
 
-<section>
+<section id="nosotros">
 
-<h2 class="titulo">Proyecto</h2>
+<h2>Sobre Nosotros</h2>
 
-<div class="card">
-
-<h3>💻 Portafolio Web</h3>
-
-<p>Este sitio web fue desarrollado como proyecto académico utilizando HTML y CSS. Está diseñado para adaptarse a dispositivos móviles y mostrar información profesional de forma moderna.</p>
-
-</div>
+<p>Fashion Style ofrece ropa moderna, elegante y de excelente calidad para toda la familia. Nuestro objetivo es brindar la mejor experiencia de compra a nuestros clientes.</p>
 
 </section>
 
-<section>
+<section id="contacto">
 
-<h2 class="titulo">Contacto</h2>
+<h2>Contáctanos</h2>
 
-<div class="card">
+<form>
 
-<p>📍 Ecuador</p>
+<input type="text" placeholder="Nombre"><br><br>
 
-<p>📧 jenniffer@example.com</p>
+<input type="email" placeholder="Correo"><br><br>
 
-<p>🎓 Ingeniería en Tecnología de la Información</p>
+<input type="tel" placeholder="Teléfono"><br><br>
 
-</div>
+<textarea placeholder="Escribe tu mensaje"></textarea><br><br>
+
+<button type="submit">Enviar</button>
+
+</form>
 
 </section>
 
 <footer>
 
-<p>© 2026 Jenniffer Fariño | Portafolio Profesional</p>
+<p>© 2026 Fashion Style | Guayaquil - Ecuador</p>
 
 </footer>
 
